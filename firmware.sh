@@ -82,7 +82,7 @@ MrChromebox does not provide any support for running Windows."
 		read -rep "Press Y to continue or any other key to return to the main menu. "
 		[[ "$REPLY" = "y" || "$REPLY" = "Y" ]] || return
 
-	preferUSB=false
+	preferUSB=true
 	if [[ "$rwlegacy_file" != *"altfw"* ]]; then
 		echo -e ""
 		#USB boot priority
